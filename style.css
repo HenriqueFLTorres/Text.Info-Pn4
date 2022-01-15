@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 80px;
+    color: #1d1d1d;
+    transform: scale(1, 1);
+    transition: all 0.2s;
+}
+h1:hover {
+    transform: scale(1.2, 1.2);
+}
+
+::selection {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+#bg {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://picsum.photos/seed/picsum/1920/1080');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+}
+
+#inpbox {
+    width: 60vw;
+    min-height: 120px;
+}
+textarea {
+    height: 350px;
+    padding: 1em;
+    outline: none;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #31313157;
+    border-radius: 7px;
+    border: none;
+    transform: scale(1, 1);
+
+    color: #fff;
+    resize: none;
+    transition: all 0.2s;
+}
+
+textarea:focus {
+    background: #64646457;
+}
+
+#result:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 80vh;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    padding: 15px 40px;
+    width: 50vw;
+
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+
+    border: none;
+    background: #1d1d1d;
+    color: #fff;
+    border-radius: 7px;
+    transform: scale(1, 1);
+
+    transition: all 0.4s;
+}
+
+button:hover {
+    background: #272727;
+    transform: scale(1.1, 1.1);
+}
+
+::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1d1d1d;        
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3b3b3b;    
+    border-radius: 20px;       
+    border: 3px solid #1d1d1d;  
+  }
+
+#result {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    vertical-align: text-bottom;
+    min-width: 200px;
+    word-wrap: break-word;
+    height: 130px;
+    width: 30vw;
+    min-height: 80px;
+    margin-bottom: 5vh;
+}
